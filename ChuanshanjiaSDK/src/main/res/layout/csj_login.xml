@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/csj_white"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <!-- 通行证、密码Logo -->
+    <LinearLayout
+        style="@style/csj_option_margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/csj_account_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/csj_pw_img_desc"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/csj_topbar"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 通行证、密码 -->
+
+    <LinearLayout
+        style="@style/csj_option_margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 通行证 -->
+
+        <LinearLayout
+            android:id="@+id/csj_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/csj_login_input_up"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/csj_pw_img_desc"
+                android:src="@drawable/csj_login_account_icon"></ImageView>
+
+            <EditText
+                android:id="@+id/csj_account_login_account"
+                style="@style/csj_option_edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:completionThreshold="1"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                android:hint="@string/csj_login_hint"
+                android:maxLength="32"
+                android:nextFocusDown="@+id/csj_account_login_password"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:singleLine="true"></EditText>
+
+            <ImageView
+                android:id="@+id/csj_login_del_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/csj_pw_img_desc"
+                android:paddingRight="5dp"
+                android:src="@drawable/csj_login_default_del"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- 密码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/csj_login_input_down"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/csj_pw_img_desc"
+                android:src="@drawable/csj_login_pwd_icon"></ImageView>
+
+            <EditText
+                android:id="@+id/csj_account_login_password"
+                style="@style/csj_option_edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/csj_login_pwd_hint"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:singleLine="true"></EditText>
+
+            <ImageView
+                android:id="@+id/csj_login_del_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/csj_pw_img_desc"
+                android:paddingRight="5dp"
+                android:src="@drawable/csj_login_default_del"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 注册/登录 -->
+
+    <LinearLayout
+        style="@style/csj_option_margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/csj_account_login_reg_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></TextView>
+
+        <Button
+            android:id="@+id/csj_account_login_log"
+            style="@style/csj_button_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/csj_register_selector"
+            android:onClick="click"
+            android:text="@string/csj_submit_confirm"></Button>
+
+    </LinearLayout>
+    <!-- 忘记密码 -->
+
+    <RelativeLayout
+        android:id="@+id/csj_forget_password_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <Button
+            android:id="@+id/csj_account_login_reg"
+            style="@style/csj_corner_text_style"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/csj_account_phone_register"
+            android:textSize="16sp"></Button>
+
+        <Button
+            android:id="@+id/csj_ks_register"
+            style="@style/csj_corner_text_style"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:paddingBottom="10dp"
+            android:text="@string/csj_account_ks_register"
+            android:textSize="16sp"
+            android:layout_alignBaseline="@+id/csj_account_login_reg"
+            android:layout_centerHorizontal="true"></Button>
+
+        <Button
+            android:id="@+id/csj_login_forget_password"
+            style="@style/csj_corner_text_style"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/csj_account_login_tip_forget_password"
+            android:textSize="16sp"
+            android:layout_alignBaseline="@+id/csj_ks_register"
+            android:layout_alignParentEnd="true"></Button>
+    </RelativeLayout>
+
+</LinearLayout>

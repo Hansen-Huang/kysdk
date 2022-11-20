@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bind_phone"
+            android:onClick="click"
+            android:text="手机登录"/>
+
+        <Button
+            android:id="@+id/bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/send_message"
+            android:onClick="click"
+            android:text="绑定手机"/>
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tourist"
+            android:onClick="click"
+            android:text="发送验证码"/>
+
+        <Button
+            android:id="@+id/weixin_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/login"
+            android:onClick="click"
+            android:text="微信登录"/>
+
+        <Button
+            android:id="@+id/submit_realname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/qq_login"
+            android:onClick="click"
+            android:text="实名认证"/>
+
+        <Button
+            android:id="@+id/tourist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="click"
+            android:text="游客登录"/>
+
+        <Button
+            android:id="@+id/weixin_pay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/alipay"
+            android:onClick="click"
+            android:text="微信支付"/>
+
+        <Button
+            android:id="@+id/alipay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/submit_realname"
+            android:onClick="click"
+            android:text="支付宝支付"/>
+
+
+        <Button
+            android:id="@+id/qq_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/weixin_login"
+            android:onClick="click"
+            android:text="QQ登录"/>
+
+
+        <Button android:id="@+id/qq_share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weixin_pay"
+                android:onClick="click"
+                android:text="QQ分享"
+        />
+        <Button android:id="@+id/qq_share_to_qzone_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qq_share_btn"
+                android:onClick="click"
+                android:text="QQ空间分享"
+        />
+        <Button android:id="@+id/wechat_share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qq_share_to_qzone_btn"
+                android:onClick="click"
+                android:text="微信分享"
+        />
+        <Button android:id="@+id/wechat_timeline_share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wechat_share_btn"
+                android:onClick="click"
+                android:text="微信朋友圈分享"
+        />
+        <Button android:id="@+id/wb_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wechat_timeline_share_btn"
+            android:onClick="click"
+            android:text="微博登录"
+            />
+        <Button android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wb_login_btn"
+            android:onClick="click"
+            android:text="手机注册登录界面"
+            />
+        <Button android:id="@+id/pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:onClick="click"
+            android:text="手机支付界面"
+            />
+    </RelativeLayout>
+</ScrollView>

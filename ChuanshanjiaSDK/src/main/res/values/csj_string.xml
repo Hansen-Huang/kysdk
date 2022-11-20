@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="csj_pw_img_desc">image desc</string>
+  <string name="csj_phone_number">手机号</string>
+  <string name="csj_phone_auth_code">手机验证码</string>
+  <string name="csj_login_pwd_hint">请输入密码</string>
+  <string name="csj_register_after_read_and_agree">已阅读并同意</string>
+  <string name="csj_user_service_agreement">《用户服务协议》</string>
+  <string name="csj_register_back_login">返回登录</string>
+  <string name="csj_submit_register">立即注册</string>
+  <string name="csj_get_auth_code">获取验证码</string>
+  <string name="csj_account_login_tip_forget_password">忘记密码</string>
+  <string name="csj_account_ks_register">快速登录</string>
+  <string name="csj_login_hint">手机号或账号</string>
+  <string name="csj_login_loading">正在登录....</string>
+  <string name="csj_find_set_password">重置密码</string>
+  <string name="csj_account_phone_register">手机注册</string>
+  <string name="csj_submit_confirm">立即登录</string>
+
+</resources>

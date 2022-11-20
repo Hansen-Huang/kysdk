@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="blue">#ff0000dd</color>
+    <color name="pp_app_item_state_pressed">#193399cc</color>
+
+    <drawable name="pp_color_btn_app_download_normal">#880000ff</drawable>
+    <drawable name="pp_color_btn_app_downloading_normal">#880000ff</drawable>
+    <drawable name="pp_color_btn_app_install_normal">#8800ffff</drawable>
+    <drawable name="pp_color_btn_app_open_normal">#6600ff00</drawable>
+    <drawable name="pp_color_btn_app_update_normal">#88ffa000</drawable>
+    <drawable name="pp_color_btn_app_download_pressed">#0000ff</drawable>
+    <drawable name="pp_color_btn_app_downloading_pressed">#0000ff</drawable>
+    <drawable name="pp_color_btn_app_install_pressed">#00ffff</drawable>
+    <drawable name="pp_color_btn_app_open_pressed">#ff00ff00</drawable>
+    <drawable name="pp_color_btn_app_update_pressed">#ffa000</drawable>
+    <drawable name="pp_s_color">#7aa4fa</drawable>
+    <drawable name="pp_g_color">#9ebf17</drawable>
+    <drawable name="pp_m_color">#fc9e01</drawable>
+    <drawable name="pp_w_color">#e0c40f</drawable>
+    <drawable name="pp_t_color">#a77adf</drawable>
+    <drawable name="pp_lt_color">#eeeff0</drawable>
+    <drawable name="pp_w_browser_color">#00000000</drawable>
+    <drawable name="pp_list_color1">#444444</drawable>
+    <drawable name="pp_list_color2">#94979c</drawable>
+    <drawable name="pp_rank_color">#3a475e</drawable>
+    <drawable name="pp_tab_select_color">#3399cc</drawable>
+    <drawable name="pp_list_tool_btn_normal_color">#6f7d87</drawable>
+    <drawable name="pp_bk">#f9f9fa</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="t">#00ffffff</drawable>
+    <drawable name="pp_list_title_color">#e9e9eb</drawable>
+    <drawable name="pp_text_normal_color">#444444</drawable>
+    <drawable name="pp_text_press_color">#3399cc</drawable>
+    <drawable name="pp_text_disable_color">#b8b8b8</drawable>
+    <drawable name="pp_transprent">#00000000</drawable>
+    <drawable name="pp_wp_menu_press">#1A000000</drawable>
+	<drawable name="pp_drawable_blue_green">#3399cc</drawable>
+    <color name="sliding">#ababab</color>
+    
+    
+    <!-- 以下是shu检查更新的资源文件 -->
+    <color name="dialog_btn_pressed">#FFE0E0E0</color>
+    <color name="dialog_btn_normal">#FFF7F7F7</color>
+
+    <!-- 程序中所有的字体颜色 -->
+   	<color name="pp_font_color_title">#FF000000</color>
+   	<color name="pp_font_color_grey">#FF909090</color>
+   	<color name="pp_font_color_normal">#FF444444</color>
+	<color name="pp_font_color_white">#FFFFFFFF</color>
+   	<color name="pp_font_color_blue_green">#FF3399CC</color>
+   	
+   	<!-- 程序中所有的背景颜色 -->
+   	<color name="pp_background_color_blue_green">#FF3399CC</color>
+    <color name="pp_background_color_blue_green_shallow">#FF4CB3E6</color>
+   	<color name="pp_background_color_normal">#FF444444</color>
+   	<color name="pp_background_color_grey">#FFFCFCFC</color>
+    <color name="pp_background_color_white">#FFFFFFFF</color>
+    <color name="pp_background_color_FAFAFA">#FFFAFAFA</color>
+    <color name="pp_rectangle_color_normal">#FFADADAD</color>
+    <color name="pp_rectangle_color_selector">#FFFFFFFF</color>
+   	<color name="pp_line_top_title">#FFA6A6A6</color>
+   	<color name="pp_line_content">#FFDADADA</color>
+   	<color name="pp_ling_vertical">#FFD8D8D8</color>
+    <drawable name="pp_list_pressed_color">#193399cc</drawable>
+    
+    <!-- 程序中按钮背景颜色 -->
+	<color name="pp_color_btn_app_other_normal">#FF3399CC</color>
+    <color name="pp_color_btn_app_update_normal">#FFFF9C00</color>
+    <color name="pp_color_btn_app_open_normal">#FF5FAB46</color>
+    <color name="pp_color_btn_app_uninstall_normal">#FFA60303</color>
+    <color name="pp_color_btn_app_delete_normal">#FFA60303</color>
+    
+	<color name="pp_color_btn_app_other_disable">#FF909090</color>
+	<color name="pp_color_btn_app_other_press">#FF4CB3E6</color>
+    <color name="pp_color_btn_app_update_press">#FFFFB745</color>
+    <color name="pp_color_btn_app_open_press">#FF78CB5C</color>
+    <color name="pp_color_btn_app_uninstall_press">#FFE63838</color>
+    <color name="pp_color_btn_app_delete_press">#FFE63838</color>
+    <color name="csj_white">#FFFFFF</color>
+    <color name="csj_black">#000000</color>
+    <color name="csj_blue">#0000FF</color>
+    <color name="csj_gray">#808080</color>
+    <color name="csj_background">#e2e2e2</color>
+    <color name="csj_cust_black">#2c2c2c</color>
+    <color name="csj_cust_yellow">#ff9000</color>
+    <color name="csj_cust_gray">#F8F8F8</color>
+    <color name="csj_divider_gray">#E2E2E6</color>
+     <color name="csj_cust_red">#FF0000</color>
+    <!-- Ids -->
+    <item name="csj_title_left_btn_id" type="id"/>
+    <item name="csj_title_right_btn_id" type="id"/>
+    <item name="csj_title_txt_id" type="id"/>
+    <item name="csj_title_progress_bar_id" type="id"/>
+    <!-- Ids -->
+
+</resources>

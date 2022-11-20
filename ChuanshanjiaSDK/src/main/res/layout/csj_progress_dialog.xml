@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wd_login_progress_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/csj_login_remote_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/csj_pw_img_desc"
+        android:src="@drawable/csj_progress_remote" />
+
+    <TextView
+        android:id="@+id/csj_progressdialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/csj_login_loading" />
+
+</LinearLayout>
