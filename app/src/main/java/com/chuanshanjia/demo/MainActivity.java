@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         ChuanshanjiaSDK.getInstance().init(info, new CSJCallBackListener.OnInitCompleteListener() {
             @Override
             public void onComplete(int code, boolean hasLogin, CSJUser user) {
+                Log.i("返回:", "返回" + code);
                 switch (code) {
                     case CSJReturnCode.SUCCESS:
                         // 成功
@@ -267,87 +268,6 @@ public class MainActivity extends AppCompatActivity {
                 });
                 break;
             }
-            case R.id.qq_share_btn:
-
-                ChuanshanjiaSDK.getInstance().shareToQQ(MainActivity.this, targeturl, imageurl, title, content,
-                        new CSJCallBackListener.OnShareListener() {
-                            @Override
-                            public void onSuccess() {
-                                Log.i(TAG, "onSuccess: ");
-                            }
-
-                            @Override
-                            public void onError() {
-                                Log.i(TAG, "onError: ");
-                            }
-
-                            @Override
-                            public void onCancel() {
-                                Log.i(TAG, "onCancel: ");
-                            }
-                        });
-
-                break;
-            case R.id.qq_share_to_qzone_btn:
-                ChuanshanjiaSDK.getInstance().shareToQQZone(MainActivity.this, targeturl, imageurl, title, content,
-                        new CSJCallBackListener.OnShareListener() {
-                            @Override
-                            public void onSuccess() {
-                                Log.i(TAG, "onSuccess: ");
-                            }
-
-                            @Override
-                            public void onError() {
-                                Log.i(TAG, "onError: ");
-                            }
-
-                            @Override
-                            public void onCancel() {
-                                Log.i(TAG, "onCancel: ");
-                            }
-                        });
-
-
-                break;
-            case R.id.wechat_share_btn:
-                ChuanshanjiaSDK.getInstance().shareImageToWechat(MainActivity.this, BitmapFactory.decodeResource(getResources(), R.drawable.logo),new CSJCallBackListener.OnShareListener() {
-                    @Override
-                    public void onSuccess() {
-                        Log.i(TAG, "onSuccess: ");
-                    }
-
-                    @Override
-                    public void onError() {
-                        Log.i(TAG, "onError: ");
-                    }
-
-                    @Override
-                    public void onCancel() {
-                        Log.i(TAG, "onCancel: ");
-                    }
-                });
-
-                break;
-            case R.id.wechat_timeline_share_btn:
-
-                ChuanshanjiaSDK.getInstance().shareToWechatTimeline(targeturl, imageurl, title, content, new CSJCallBackListener.OnShareListener() {
-                    @Override
-                    public void onSuccess() {
-                        Log.i(TAG, "onSuccess: ");
-                    }
-
-                    @Override
-                    public void onError() {
-                        Log.i(TAG, "onError: ");
-                    }
-
-                    @Override
-                    public void onCancel() {
-                        Log.i(TAG, "onCancel: ");
-                    }
-                });
-                break;
-
         }
 
 

@@ -113,7 +113,7 @@ public class CSJAppInfo {
 
 		TelephonyManager tm = (TelephonyManager) context
 				.getSystemService(Context.TELEPHONY_SERVICE);
-		hashMap.put("device_id", tm.getDeviceId());
+		hashMap.put("device_id", "shfkjsdhfjkshf");
 
 		hashMap.put("device_version", android.os.Build.VERSION.RELEASE);
 
